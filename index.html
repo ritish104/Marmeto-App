@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Responsive Cart Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/logo.png" height="30" alt="" />
+          <h1>Marmeto</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- font image -->
+    <img src="images/front.png" alt=""  class="font-img"/>
+
+    <!-- Cart Content -->
+
+    <main>
+        <section class="cart">
+          <div class="cart-container">
+            <table class="cart-table">
+              <thead>
+                <tr>
+                  <th>image</th>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Subtotal</th>
+                  <th>Remove</th>
+
+                </tr>
+              </thead>
+              <tbody class="cart-items">
+               
+              </tbody>
+            </table>
+          </div>
+      
+          <aside class="cart-totals">
+            <h2>Cart Totals</h2>
+            <div class="totals">
+              <p>Subtotal: <span id="subtotal">₹0.00</span></p>
+              <p>Total: <span id="total">₹0.00</span></p>
+            </div>
+            <button class="checkout-btn">Check Out</button>
+          </aside>
+        </section>
+      </main>
+      
+
+    <!-- Footer -->
+    <footer>
+      <img src="images/footer.png" width="80%" class="footer-img" />
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
